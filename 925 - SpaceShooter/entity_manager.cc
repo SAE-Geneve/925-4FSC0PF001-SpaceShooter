@@ -2,6 +2,8 @@
 
 #include <algorithm>
 #include <iostream>
+#include <SFML/Graphics/RenderTarget.hpp>
+#include <SFML/Graphics/RenderWindow.hpp>
 
 void EntityManager::Update(const sf::RenderWindow& window, float dt)
 {
@@ -16,7 +18,6 @@ void EntityManager::Update(const sf::RenderWindow& window, float dt)
 	{
 		entity->Move(dt);
 	}
-
 
 }
 

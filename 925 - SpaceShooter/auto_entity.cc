@@ -19,6 +19,7 @@ void AutoEntity::Load(std::string_view pathFile, sf::Vector2f direction, float s
 
 void AutoEntity::SetPosition(sf::Vector2f position)
 {
+	rect_.setPosition(position);
 	motor_.SetPosition(position);
 }
 
@@ -40,7 +41,7 @@ void AutoEntity::draw(sf::RenderTarget& target, sf::RenderStates states) const
 	}
 }
 
-sf::FloatRect AutoEntity::GetBounds()
+sf::FloatRect AutoEntity::GetBounds() const
 {
 	return rect_.getGlobalBounds();
 }

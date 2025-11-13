@@ -21,9 +21,15 @@ void Motor::SetPosition(sf::Vector2f position)
 {
 	position_ = position;
 }
-sf::Vector2f Motor::GetDirection()
+
+sf::Vector2f Motor::GetDirection() const
 {
 	return direction_;
+}
+
+float Motor::GetSpeed() const
+{
+	return speed_;
 }
 
 

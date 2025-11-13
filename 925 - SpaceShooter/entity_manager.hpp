@@ -20,21 +20,7 @@ protected:
 
 };
 
-class EnemyManager : public EntityManager
-{
 
-public:
-	void SpawnEntity(sf::Vector2f position) override
-	{
-		// Ajouter dans le vecteur
-		entities_.emplace_back(new Enemy());
-
-		// mettre à la position de spawn
-		entities_.back()->Load();
-		entities_.back()->SetPosition(position);
-	}
-
-};
 
 
 

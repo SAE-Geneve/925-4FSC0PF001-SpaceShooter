@@ -23,12 +23,11 @@ public:
 
 	virtual void Move(float) = 0;
 	virtual void Load() = 0;
-	sf::FloatRect GetBounds();
+	sf::FloatRect GetBounds() const;
 
 	bool StillAlive = true;
 
 protected:
 	void draw(sf::RenderTarget&, sf::RenderStates) const override;
-
 };
 

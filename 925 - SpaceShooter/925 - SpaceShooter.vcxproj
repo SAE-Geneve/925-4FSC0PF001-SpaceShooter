@@ -186,16 +186,19 @@
     <ClCompile Include="projectile.cc" />
     <ClCompile Include="projectile_manager.cc" />
     <ClCompile Include="starship_player.cc" />
+    <ClCompile Include="state_manager.cc" />
     <ClCompile Include="ui.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="auto_entity.hpp" />
     <ClInclude Include="enemy.hpp" />
+    <ClInclude Include="enemy_manager.hpp" />
     <ClInclude Include="entity_manager.hpp" />
     <ClInclude Include="motor.h" />
     <ClInclude Include="projectile.hpp" />
     <ClInclude Include="projectile_manager..hpp" />
     <ClInclude Include="starship_player.hpp" />
+    <ClInclude Include="state_manager.hpp" />
     <ClInclude Include="ui.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

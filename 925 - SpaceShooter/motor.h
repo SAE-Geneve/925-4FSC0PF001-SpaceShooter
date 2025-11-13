@@ -15,7 +15,8 @@ public:
 	void SetDirection(sf::Vector2f);
 	void SetPosition(sf::Vector2f);
 
-	sf::Vector2f GetDirection();
+	sf::Vector2f GetDirection() const;
+	float GetSpeed() const;
 
 	sf::Vector2f Move(float deltaTimeSec);
 
